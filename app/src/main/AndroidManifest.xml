@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="memory.hqt.com.heapsizetesting">
+
+    <application
+        android:name=".core.HeapTestApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <activity android:name=".core.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".servicetest.ServiceControllerActivity" />
+        <activity android:name=".multiprocess.DiffProcessControllerActivity" />
+        <activity android:name=".bigtest.BigControllerActivity" />
+        <activity android:name=".mediumtest.MediumControllerActivity" />
+        <activity
+            android:name=".core.InfoActivity"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".bigtest.BigActivity" />
+        <activity android:name=".mediumtest.MediumActivity" />
+        <activity android:name=".jnitest.JNIActivity" />
+
+        <service
+            android:name=".servicetest.MediumService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".multiprocess.DifferentProcessService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="true" />
+
+
+    </application>
+
+</manifest>

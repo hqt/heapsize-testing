@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HeapSizeTesting</string>
+    <string name="title_activity_big">BigActivity</string>
+    <string name="title_activity_medium">MediumActivity</string>
+</resources>
