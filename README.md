@@ -148,6 +148,8 @@ This is a very hacky way and developer should avoid using this except some speci
 Finally, we have finished our great tour how android manage heap section and methods for improving memory usage. By using in true way, android application not only improve heap size capacity but also prevent Android VM kill application for another active applications when system in low memory state.
 
 Here is a GUI for application demonstrate all above examples. Hope you enjoy ^^
+<img src="AppImage/gui.png" width="400"/>
+
 
 # Reference Link
 - <a href="http://stackoverflow.com/questions/2630158/detect-application-heap-size-in-android">Detect application heap size in Android</a>
